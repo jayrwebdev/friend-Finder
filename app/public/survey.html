@@ -117,7 +117,7 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>.</h4>
+    <h4>Are you interested in traveling the world?</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -252,11 +252,11 @@
         };
 
         // AJAX post the data to the friends API.
-        $.post("/api/friends.js", userData, function(data) {
+        $.post("/api/friends", userData, function(data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data.name);
-          $("#match-img").attr("src", data.photo);
+          $("#match-name").text(data.matchUser);
+          $("#match-img").attr("src", data.matchPic);
 
           // Show the modal with the best match
           $("#results-modal").modal("toggle");

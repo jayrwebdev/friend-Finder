@@ -36,9 +36,9 @@ module.exports = function (survey) {
                 }
 
                 if ( difference < totaldiff) {
-                  totaldiff = diff;
+                  totaldiff = difference;
                   matchUser = friends[t].name;
-                  matchPic = firends[i].photo
+                  matchPic = friends[t].photo
                 }
       }
 
