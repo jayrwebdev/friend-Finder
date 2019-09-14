@@ -12,6 +12,24 @@
 
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+   <style>
+         body {
+           background-color: black ;
+         }
+         h2 {
+           color: red;
+         }
+         #button {
+           background-color: red ;
+           border-color: black ;
+         }
+         #line {
+           color: red ;
+         }
+         a {
+           color: red ;
+         }
+   </style>
 
 </head>
 
@@ -27,14 +45,14 @@
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" id='button' class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
       </div>
 
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p id='line'><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
       </div>
     </footer>
 
