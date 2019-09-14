@@ -1,6 +1,6 @@
 var express = require("express");
 var path = require("path")
-var PORT = 2132;
+var PORT = process.env.PORT || 2132;
 var survey = express()
 var bParser = require('body-parser')
 var server=require('./routing/apiRoutes.js')
